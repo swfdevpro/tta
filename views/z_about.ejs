@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><% include partials/page/head.ejs %></head>
+<% include partials/page/header.ejs %>
+
+   <body>
+   	<% include partials/page/nav.ejs %>
+  	<div class="container">
+     <!-- <p>Welcome to <%= title %></p> -->
+ 		 
+ <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading"><%= Featurette1Heading%><span class="text-muted"><%= Featurette1HeadingMuted%></span></h2>
+          <p class="lead"><%= Featurette1Text %></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src=<%= Featurette1Image %> alt="Generic placeholder image">
+        </div>
+      </div>
+
+ <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading"><%= Featurette2Heading%><span class="text-muted"><%= Featurette2HeadingMuted%></span></h2>
+          <p class="lead"><%= Featurette2Text %></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src=<%= Featurette2Image %> alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+	</div> 
+
+
+<% include partials/page/footer.ejs %>
+<% include partials/page/jsdefaults.ejs %>
+  </body>
+</html>
